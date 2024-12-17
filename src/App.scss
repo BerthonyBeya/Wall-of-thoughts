@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: cursive;
+}
+
+.App {
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  line-height: 3rem;
+  background-color: #000000;
+
+  .background-container {
+    background-image: url("/public/images/backgroundImg.jpg");
+    background-size: contain;
+    width: 100%;
+    min-height: 100vh;
+
+    .thought {
+      padding: 3rem;
+      font-size: 2.5rem;
+      text-shadow: 0px 20px 5px #000000;
+      border: 1px solid red;
+    }
+  }
+}
