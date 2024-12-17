@@ -9,7 +9,7 @@ function App() {
         <form className="textbox">
           <div className="textbox__name">
             <label className="textbox__label" htmlFor="">Enter your name:</label>
-            <input className="textbox__text"  type="text" placeholder="here" />
+            <input className="textbox__text"  type="text" placeholder="right here" />
           </div>
           <textarea
             className="textbox__thought"
