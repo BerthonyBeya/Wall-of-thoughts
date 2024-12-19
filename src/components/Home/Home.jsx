@@ -7,7 +7,7 @@ const Home = () => {
       <h1 className="title">THE WALL OF THOUGHTS</h1>
       <form className="textbox">
         <div className="textbox__name">
-          <label className="textbox__label" htmlFor="">
+          <label className="textbox__label">
             Enter your name:
           </label>
           <input
