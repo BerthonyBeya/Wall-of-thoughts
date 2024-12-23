@@ -6,12 +6,20 @@
   font-size: 1.2rem;
 
   & > div {
-    min-height: 10rem;
+    position: relative;
+    min-height: 16rem;
     border: 1px solid #000;
     background-color: #000000c6;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
+
+    .thought-card__logo {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      font-size: 2rem;
+    }
   }
 }
