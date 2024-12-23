@@ -13,6 +13,10 @@ const Button = ({ title }) => {
     console.log("Check all thoughts!");
   };
 
+  const backHomeHandler = () => {
+    navigateTo("/");
+  };
+
   const addingEventListenerHandler = (event) => {
     event.preventDefault();
 
@@ -22,6 +26,10 @@ const Button = ({ title }) => {
 
     if (title === "Check all thoughts") {
       return AllThoughtsHandler();
+    }
+
+    if (title === "Back Home") {
+      return backHomeHandler();
     }
   };
 
