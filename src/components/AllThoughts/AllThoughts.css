@@ -2,4 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.thoughtCard-container {
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
 }/*# sourceMappingURL=AllThoughts.css.map */

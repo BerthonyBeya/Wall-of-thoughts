@@ -1,0 +1,17 @@
+.thought-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  line-height: 2.1;
+  grid-gap: 2rem;
+  font-size: 1.2rem;
+
+  & > div {
+    min-height: 10rem;
+    border: 1px solid #000;
+    background-color: #000000c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+}
