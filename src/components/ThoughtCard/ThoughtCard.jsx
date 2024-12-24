@@ -6,10 +6,16 @@ const ThoughtCard = () => {
     <div className="thought-card">
       <div>Card 1</div>
       <div>
-        <FaDeleteLeft className="thought-card__logo"/>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui voluptate
-        velit deserunt veniam dignissimos consequatur necessitatibus! Itaque
-        accusantium veritatis incidunt eum sint! Voluptatibus vel nisi ipsum,
+        <div>
+          <h3 className="thought-card__name">Berthony</h3>
+          <FaDeleteLeft className="thought-card__logo" />
+        </div>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
+          voluptate velit deserunt veniam dignissimos consequatur
+          necessitatibus! Itaque accusantium veritatis incidunt eum sint!
+          Voluptatibus vel nisi ipsum
+        </p>
       </div>
       <div>Card 3</div>
       <div>Card 4</div>
