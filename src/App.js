@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-/* import { BsChatTextFill } from "react-icons/bs"; */
 import AllThoughts from "./components/AllThoughts/AllThoughts";
 import Home from "./components/Home/Home";
 import "./App.css";

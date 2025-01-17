@@ -3,7 +3,6 @@ import "./ThoughtCard.css";
 import { v4 as uuidv4 } from "uuid";
 
 const ThoughtCard = () => {
-  const { v4: uuidv4 } = require("uuid");
 
   const defaultThoughts = [
     {

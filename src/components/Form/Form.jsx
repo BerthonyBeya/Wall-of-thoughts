@@ -1,10 +1,11 @@
 import Button from "../Button/Button";
-import { useState } from "react";
+import { useContext } from "react";
+import { context } from "../../contextApi/MyContext";
 import "../../App.css";
 
 const Form = () => {
-  const [personName, setPersonName] = useState("");
-  const [personThought, setPersonThought] = useState("");
+  const { personName, setPersonName, personThought, setPersonThought } =
+    useContext(context);
 
   //* Getting name
   const nameHandler = (event) => {
