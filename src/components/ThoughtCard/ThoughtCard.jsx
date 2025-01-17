@@ -1,26 +1,25 @@
-import { FaDeleteLeft } from "react-icons/fa6";
+import Thought from "../Thought/Thought";
 import "./ThoughtCard.css";
 
 const ThoughtCard = () => {
+  const defaultThoughts = [
+    {
+      personName: "Professor X",
+      personThought:
+        "Just because someone stumbles and loses their path, doesn’t mean they’re lost forever. :)",
+    },
+    {
+      personName: "Berthony",
+      personThought:
+        "Challenges make life interesting and overcoming them makes life meaningful. So, don't give up! :)",
+    },
+  ];
+
   return (
     <div className="thought-card">
-      <div>Card 1</div>
-      <div>
-        <div>
-          <h3 className="thought-card__name">Berthony</h3>
-          <FaDeleteLeft className="thought-card__logo" />
-        </div>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
-          voluptate velit deserunt veniam dignissimos consequatur
-          necessitatibus! Itaque accusantium veritatis incidunt eum sint!
-          Voluptatibus vel nisi ipsum
-        </p>
-      </div>
-      <div>Card 3</div>
-      <div>Card 4</div>
-      <div>Card 5</div>
-      <div>Card 6</div>
+      {defaultThoughts.map((eachThought) => {
+        return <Thought defaultThoughts={eachThought} />;
+      })}
     </div>
   );
 };
