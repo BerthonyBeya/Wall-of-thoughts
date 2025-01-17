@@ -1,7 +1,10 @@
 import Thought from "../Thought/Thought";
 import "./ThoughtCard.css";
+import { v4 as uuidv4 } from "uuid";
 
 const ThoughtCard = () => {
+  const { v4: uuidv4 } = require("uuid");
+
   const defaultThoughts = [
     {
       personName: "Professor X",
@@ -18,7 +21,7 @@ const ThoughtCard = () => {
   return (
     <div className="thought-card">
       {defaultThoughts.map((eachThought) => {
-        return <Thought defaultThoughts={eachThought} />;
+        return <Thought defaultThoughts={eachThought} key={uuidv4()}/>;
       })}
     </div>
   );
