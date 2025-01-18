@@ -6,7 +6,13 @@ import { v4 as uuidv4 } from "uuid";
 import "./Button.css";
 
 const Button = ({ title }) => {
-  const { personName, personThought, setDefautThought } = useContext(context);
+  const {
+    personName,
+    setPersonName,
+    setPersonThought,
+    personThought,
+    setDefautThought,
+  } = useContext(context);
 
   const navigateTo = useNavigate();
 
@@ -25,6 +31,9 @@ const Button = ({ title }) => {
         return [...current, thought];
       });
 
+      setPersonName("");
+      setPersonThought("");
+      //
       navigateTo("/allThoughts");
     }
   };

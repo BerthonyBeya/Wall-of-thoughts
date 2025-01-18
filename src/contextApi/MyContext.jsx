@@ -17,7 +17,7 @@ export const GlobalProvider = ({ children }) => {
       id: uuidv4(),
       personName: "Berthony",
       personThought:
-        "Challenges make life interesting and overcoming them makes life meaningful. So, don't give up! :)",
+        "Challenges make life interesting, and overcoming them makes life meaningful. So, don't give up! :)",
     },
   ]);
 
