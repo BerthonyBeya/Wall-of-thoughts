@@ -3,6 +3,37 @@
   padding: 0;
 }
 
+/* MEDIA QUERY MANAGER */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+@media (max-width: 30em) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (min-width: 30em) and (max-width: 37.5em) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 37.5em) and (max-width: 56.25em) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (min-width: 56.25em) and (max-width: 75em) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 18px;
+  }
+}
+
 body {
   margin: 0;
   font-family: cursive;
