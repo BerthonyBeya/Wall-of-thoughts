@@ -1,3 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* MEDIA QUERY MANAGER */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+@media (max-width: 30em) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (min-width: 30em) and (max-width: 37.5em) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 37.5em) and (max-width: 56.25em) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (min-width: 56.25em) and (max-width: 75em) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: cursive;
+}
+
+.App {
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  line-height: 3rem;
+  background-color: #000000;
+}
+.App .background-container {
+  background-image: url("/public/images/backgroundImg.jpg");
+  background-size: contain;
+  width: 100%;
+  min-height: 100vh;
+}
+.App .background-container .title {
+  padding: 4rem;
+  font-size: 3rem;
+  text-shadow: 0px 20px 5px #000000;
+  line-height: 4rem;
+  /* border: 1px solid red; */
+}
+@media (max-width: 30em) {
+  .App .background-container .title {
+    line-height: 5rem;
+  }
+}
+@media (min-width: 30em) and (max-width: 37.5em) {
+  .App .background-container .title {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+}
+.App .background-container .textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App .background-container .textbox__name {
+  width: 37rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+@media (max-width: 30em) {
+  .App .background-container .textbox__name {
+    flex-direction: column;
+  }
+}
+@media (min-width: 30em) and (max-width: 37.5em) {
+  .App .background-container .textbox__name {
+    flex-direction: column;
+  }
+}
+.App .background-container .textbox__name .textbox__label {
+  font-size: 2rem;
+  font-weight: 800;
+  text-shadow: 0px 20px 5px #000000;
+}
+@media (max-width: 30em) {
+  .App .background-container .textbox__name .textbox__label {
+    font-size: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+@media (min-width: 30em) and (max-width: 37.5em) {
+  .App .background-container .textbox__name .textbox__label {
+    font-size: 4rem;
+    padding-bottom: 3rem;
+  }
+}
+.App .background-container .textbox__name .textbox__text {
+  height: 2rem;
+  border-radius: 10px;
+  width: 18rem;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+}
+@media (max-width: 30em) {
+  .App .background-container .textbox__name .textbox__text {
+    font-size: 2.7rem;
+    width: 30rem;
+    height: 3rem;
+    margin-bottom: 2.5rem;
+  }
+}
+@media (min-width: 30em) and (max-width: 37.5em) {
+  .App .background-container .textbox__name .textbox__text {
+    margin-bottom: 2.5rem;
+    width: 40rem;
+    height: 4.5rem;
+    font-size: 3.3rem;
+    margin-bottom: 3rem;
+  }
+}
+.App .background-container .textbox__thought {
+  width: 35rem;
+  height: 10rem;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+@media (max-width: 30em) {
+  .App .background-container .textbox__thought {
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 30em) and (max-width: 37.5em) {
+  .App .background-container .textbox__thought {
+    font-size: 3.9rem;
+    margin-bottom: 2rem;
+    width: 45rem;
+    height: 15rem;
+  }
+}
+
 .all-thoughts-button {
   font-size: 1.5rem;
   padding: 1rem;
@@ -9,6 +170,16 @@
   background-color: #000;
   border: 1px solid #fff;
   box-shadow: 0px 2px 5px #fff;
+}
+@media (max-width: 30em) {
+  .all-thoughts-button {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 30em) and (max-width: 37.5em) {
+  .all-thoughts-button {
+    font-size: 4rem;
+  }
 }
 .all-thoughts-button:hover {
   background-color: #fff;
